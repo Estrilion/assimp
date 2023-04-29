@@ -117,11 +117,11 @@ publishing {
         artifact(sourceJar)
     }
     repositories.maven {
-        name = "GitHubPackages"
-        url = uri("https://maven.pkg.github.com/kotlin-graphics/assimp")
+        name = "EstrilionPackages"
+        url = uri("https://maven.pkg.github.com/Estrilion/rep")
         credentials {
-            username = System.getenv("GITHUB_ACTOR")
-            password = System.getenv("GITHUB_TOKEN")
+            username = System.getenv("estrilion_user")
+            password = System.getenv("estrilion_token")
         }
     }
 }
